@@ -1,3 +1,17 @@
 .top{
-    margin-top:20px;
+    padding-top:20px;
+    width:500px;
+    margin:0 auto;
+}
+.relative{
+    position: relative;
+}
+.bounding-box{
+    /* box-shadow: 0 0 0 3px #ff00ff inset; */
+    border:5px solid red;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    cursor: pointer;
 }
