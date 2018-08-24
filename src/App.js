@@ -3,6 +3,7 @@ import Clarifai from 'clarifai';
 import Navigation from './components/Navigation/Navigation';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import SignIn from './components/SignIn/SignIn';
 import Rank from './components/Rank/Rank';
 import Particles from 'react-particles-js';
 import './App.css'
@@ -87,10 +88,12 @@ class App extends Component {
   render() {
     return (
       <div className={'container'}>
+       
         <Particles className={'particles'} 
           params={particles}
           />
           <Navigation />
+          <SignIn />
           <Rank />
           <ImageLinkForm 
             onInputChange = {this.onInputChange} 
