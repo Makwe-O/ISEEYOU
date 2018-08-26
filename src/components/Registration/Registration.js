@@ -1,26 +1,29 @@
 import React from 'react';
-import './SignIn.css'
+import './Registration.css'
 
-const SignIn = ({ onRouteChange }) =>{
+const Registration = ({ onRouteChange }) =>{
     return(
         <div className="size">
             <div className={'text-center'}>
-                <h1>Sign In</h1>
+                <h1>Register</h1>
             </div>
            
             <hr />
-
+        
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required />
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required />
 
-            <div className="clearfix">
-            <button type="submit" className="btn btn-success" onClick={() => onRouteChange('home')}>Sign In</button>
+            <label for="psw"><b>Re-Password</b></label>
+            <input type="password" placeholder="Re-enter Password" name="re-psw" required />
+
+            <div class="clearfix">
+            <button type="submit" className="btn btn-success" onClick={() => onRouteChange('home')}>Register</button>
             
             <div className={'text-center'}>
-                <p>Not Registered?. <a href="#"  onClick={() => onRouteChange('register')}>Register</a></p>
+                <p>Already Registered?. <a href="#"  onClick={() => onRouteChange('signin')}>SignIn</a></p>
             </div>
             
             </div>  
@@ -28,4 +31,4 @@ const SignIn = ({ onRouteChange }) =>{
         </div>
     )
 }
-export default SignIn;
+export default Registration;
